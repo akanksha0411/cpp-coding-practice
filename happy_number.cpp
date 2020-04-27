@@ -36,7 +36,9 @@
  };
 
  int main(){
-     int n = 19;
+     int n;
+     cout << "Enter a number to check if it is a happy number or not : " << "\n";
+     cin >> n;
      Solution x = Solution();
       cout << x.isHappy(n) << "\n";
      return 0;
