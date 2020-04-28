@@ -3,14 +3,15 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <bits/stdc++.h>
-#include <set>
 
 using namespace std;
 
 class Solution {
 public:
+// Using Kadane's algorithm. Only comparing the element itself at
+// any index i and element itself combined with the previous
+// maximum sub array. 
+    // O(N) time complexity.
     int maxSubArray(vector<int>& nums) {
         int max_sum = nums[0];
         int individual_sum = nums[0]; 
