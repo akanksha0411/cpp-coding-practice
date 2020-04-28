@@ -24,6 +24,8 @@ public:
     return max_sum;
     }
 };
+// If the array contains just one element, it will be returned as the max 
+// subarray sum as we cannot return an empty array.
 
 int main(){
     vector<int> v = {2, 3, -1, -4, 4, 8, 19};
